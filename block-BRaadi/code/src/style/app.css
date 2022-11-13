@@ -250,3 +250,13 @@ button {
 .small {
   font-size: 0.8rem;
 }
+.head-dark{
+  background: linear-gradient(
+    150deg,
+    rgba(0, 0, 0, 0.8),
+    rgba(172, 171, 168, 0.7)
+  );
+}
+.dark{
+  background-color: black;
+}

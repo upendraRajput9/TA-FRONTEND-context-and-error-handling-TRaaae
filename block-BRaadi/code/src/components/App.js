@@ -1,14 +1,17 @@
 import React from "react";
 import Header from "./Header";
 import Main from "./Main";
+import {ThemeProvider,ThemeConsumer} from "./ThemeContex"
 
 class App extends React.Component {
+  
   render() {
-    let { isDarkMode } = this.state;
     return (
       <>
-        <Header isDarkMode={isDarkMode} />
-        <Main isDarkMode={isDarkMode} />
+      <ThemeProvider>
+        <Header  />
+        <Main />
+        </ThemeProvider>
       </>
     );
   }
